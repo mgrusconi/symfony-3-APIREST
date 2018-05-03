@@ -1,0 +1,1 @@
+a:3:{i:0;C:46:"Symfony\Component\Config\Resource\FileResource":50:{s:42:"/var/www/craft-back/app/config/routing.yml";}i:1;C:46:"Symfony\Component\Config\Resource\FileResource":83:{s:75:"/var/www/craft-back/src/Application/SomeBundle/Resources/config/routing.yml";}i:2;C:72:"Symfony\Component\DependencyInjection\Config\ContainerParametersResource":6:{a:0:{}}}
