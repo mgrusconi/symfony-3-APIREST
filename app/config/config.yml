@@ -69,6 +69,17 @@ swiftmailer:
     password: '%mailer_password%'
     spool: { type: memory }
 
+# NelmioCORS Configuration
+nelmio_cors:
+    defaults:
+        allow_credentials: false
+        allow_origin: ['*']
+        allow_headers: ['*']
+        allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+        max_age: 3600
+        hosts: []
+        origin_regex: false
+
 # NelmioDOC Configuration
 nelmio_api_doc:
     areas:
@@ -82,3 +93,8 @@ nelmio_api_doc:
         schemes:
             - http
             - https
+        securityDefinitions:
+            token:
+                type: apiKey
+                name: authorization
+                in: header
