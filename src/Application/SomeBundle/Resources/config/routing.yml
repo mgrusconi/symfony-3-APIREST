@@ -1,4 +1,4 @@
-craftback_default_healthcheck:
+application_default_healthcheck:
     path:     /healthcheck
     defaults: { _controller: SomeBundle:Default:healthcheck }
     methods: GET

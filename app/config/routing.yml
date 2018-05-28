@@ -1,4 +1,4 @@
-craft_back:
+application:
     resource: "@SomeBundle/Resources/config/routing.yml"
     prefix:   /app
 
