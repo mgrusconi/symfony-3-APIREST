@@ -73,8 +73,8 @@ COPY ./docker/vhost.conf /etc/apache2/sites-enabled/000-default.conf
 # Application
 ################################################################################
 
-COPY . /var/www/craft-back
-WORKDIR /var/www/craft-back
+COPY . /var/www/app
+WORKDIR /var/www/app
 
 ################################################################################
 # Entrypoint

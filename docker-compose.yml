@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+
+  app:
+    build: .
+    ports:
+      - "81:80"
+    environment:
+      - VIRTUAL_HOST=rest.application.local
+    volumes:
+      - .:/var/www/app
+
+  proxy:
+      image: jwilder/nginx-proxy
+      container_name: nginx-proxy
+      ports:
+        - "80:80"
+      volumes:
+        - /var/run/docker.sock:/tmp/docker.sock:ro
+      links:
+        - app
